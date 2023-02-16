@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'stats_node = ME465_Robot.stats_node:main'
+            'stats_node = ME465_Robot.stats_node:main',
+            'camera_info_node = ME465_Robot.camera_info_hack:main',
         ],
     },
 )

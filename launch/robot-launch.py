@@ -75,6 +75,10 @@ def generate_launch_description():
             robot_params["velocity_smoother"]["ros__parameters"],
         ],
     )
+    camera_info_node = Node(
+        package="ME465_Robot",
+        executable="camera_info_node",
+    )
     return LaunchDescription([
         usb_cam,
         apriltag,
@@ -84,4 +88,5 @@ def generate_launch_description():
         safety_node,
         mux_node,
         smoother_node,
+        camera_info_node,
     ])
