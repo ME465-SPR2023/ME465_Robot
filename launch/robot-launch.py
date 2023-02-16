@@ -79,7 +79,7 @@ def generate_launch_description():
         usb_cam,
         apriltag,
         kobuki_node,
-        stats_node,
+        #stats_node,
         enable_robot,
         safety_node,
         mux_node,
